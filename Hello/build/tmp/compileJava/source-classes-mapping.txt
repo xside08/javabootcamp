@@ -1,6 +1,0 @@
-com/andriy/www/ArrMatrix.java
- com.andriy.www.ArrMatrix
-com/andriy/www/MathOperators.java
- com.andriy.www.MathOperators
-com/andriy/www/MultiplyArr.java
- com.andriy.www.MultiplyArr
