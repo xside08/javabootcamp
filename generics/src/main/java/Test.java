@@ -17,7 +17,6 @@ public class Test {
 
         System.out.println("Largest " + myList.largerOfList());
         System.out.println("Smallest " + myList.smallerOfList());
-
     }
 }
 
