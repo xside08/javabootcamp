@@ -8,7 +8,7 @@ public class Rectangle extends PlaneShape {
     private final int width;
     private final int height;
 
-    public Rectangle(Vertex2D vertex2D, int width, int height){
+    public Rectangle(Vertex2D vertex2D, int width, int height) {
         super(vertex2D);
         this.height = height;
         this.width = width;
