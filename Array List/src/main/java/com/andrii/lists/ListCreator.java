@@ -1,8 +1,8 @@
 package main.java.com.andrii.lists;
 
-import com.sun.source.tree.IfTree;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ListCreator {
 
@@ -37,6 +37,33 @@ public class ListCreator {
     public void findingCommonItems(List<String> arr, List<String> array) {
         arr.retainAll(array);
         System.out.println("common elements are : " + String.join(",", arr));
+    }
+
+    public List<String> getFruits() {
+        List<String> fruits = new ArrayList<>();
+        fruits.add("Peach");
+        fruits.add(1, "Banana");
+        fruits.add("Coconut");
+        fruits.add("Orange");
+        fruits.add("Strawberry");
+        fruits.add("Mango");
+        fruits.add("Nut");
+        fruits.add("Apple");
+
+        return fruits;
+    }
+
+    public List<String> getVegetables(){
+        List<String> vegetables = new ArrayList<>();
+        vegetables.add("Potato");
+        vegetables.add("Tomato");
+        vegetables.add("Pamelo");
+        vegetables.add("Mango");
+        vegetables.add("Carrot");
+        vegetables.add("Dill");
+        vegetables.add("Nut");
+
+        return vegetables;
     }
 }
 

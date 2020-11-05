@@ -13,29 +13,12 @@ public class Application {
         first.removeNumbersDivisionableByNum(firstArr, 3);
         System.out.println(firstArr);
 
-//      Task #2
-        List<String> fruits = new ArrayList<>();
-        fruits.add("Peach");
-        fruits.add(1, "Banana");
-        fruits.add("Coconut");
-        fruits.add("Orange");
-        fruits.add("Strawberry");
-        fruits.add("Mango");
-        fruits.add("Nut");
-        fruits.add("Apple");
-
+        List<String> fruits = first.getFruits();
         System.out.println(fruits);
         first.removeDublicateFruits(fruits);
         System.out.println(fruits);
-//      Task #3
-        List<String> vegetables = new ArrayList<>();
-        vegetables.add("Potato");
-        vegetables.add("Tomato");
-        vegetables.add("Pamelo");
-        vegetables.add("Mango");
-        vegetables.add("Carrot");
-        vegetables.add("Dill");
-        vegetables.add("Nut");
+
+        List<String> vegetables = first.getVegetables();
         first.findingCommonItems(fruits, vegetables);
 
 
@@ -46,8 +29,7 @@ public class Application {
         ts.add("three");
 
         System.out.println(ts);
-        TreeSet<String> res = (TreeSet<String>)ts.descendingSet();
+        TreeSet<String> res = (TreeSet<String>) ts.descendingSet();
         System.out.println(res);
-
     }
 }
