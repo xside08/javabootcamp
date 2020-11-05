@@ -20,10 +20,12 @@ public class OneDimensionalArray {
         Arrays.sort(arr);
         return arr[0];
     }
+
     public int showMaxNumber(int[] arr) {
         Arrays.sort(arr);
         return arr[arr.length - 1];
     }
+
     public void sortArrInDesc(int[] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
@@ -38,7 +40,7 @@ public class OneDimensionalArray {
 
     public int getSumofArr(int[] arr) {
         int a = 0;
-        for(int i : arr){
+        for (int i : arr) {
             a += i;
         }
         return a;

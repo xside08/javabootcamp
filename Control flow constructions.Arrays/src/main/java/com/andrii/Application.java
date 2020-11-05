@@ -10,8 +10,8 @@ public class Application {
 
         String[][] newMatrix = matrixOperations.initializeMatrix();
 
-        //System.out.println(matrixOperations.getDiagonal(newMatrix));
-        //System.out.println(matrixOperations.getMatrixSize(newMatrix));
+        System.out.println(matrixOperations.getDiagonal(newMatrix));
+        System.out.println(matrixOperations.getMatrixSize(newMatrix));
 
         OneDimensionalArray oneDimensionalArray = new OneDimensionalArray();
         int[] newArr = oneDimensionalArray.initializeOneDimensionalArray();
