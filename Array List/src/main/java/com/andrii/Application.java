@@ -21,13 +21,7 @@ public class Application {
         List<String> vegetables = first.getVegetables();
         first.findingCommonItems(fruits, vegetables);
 
-
-        TreeSet<String> ts = new TreeSet<>();
-        ts.add("hello");
-        ts.add("one");
-        ts.add("two");
-        ts.add("three");
-
+        TreeSet<String> ts = first.getTreeSetArr();
         System.out.println(ts);
         TreeSet<String> res = (TreeSet<String>) ts.descendingSet();
         System.out.println(res);

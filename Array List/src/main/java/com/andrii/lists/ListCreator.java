@@ -3,6 +3,7 @@ package main.java.com.andrii.lists;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.TreeSet;
 
 public class ListCreator {
 
@@ -64,6 +65,26 @@ public class ListCreator {
         vegetables.add("Nut");
 
         return vegetables;
+    }
+
+    public int compare(String str1, String str2)
+    {
+        String first_Str = str1;
+        String second_Str = str2;
+        return second_Str.compareTo(first_Str);
+    }
+
+    public TreeSet<String> getTreeSetArr(){
+        TreeSet<String> creatingATreeSet = new TreeSet<>();
+        creatingATreeSet.add("1");
+        creatingATreeSet.add("2");
+        creatingATreeSet.add("3");
+        creatingATreeSet.add("4");
+        creatingATreeSet.add("5");
+        creatingATreeSet.add("6");
+        creatingATreeSet.add("7");
+
+        return creatingATreeSet;
     }
 }
 
