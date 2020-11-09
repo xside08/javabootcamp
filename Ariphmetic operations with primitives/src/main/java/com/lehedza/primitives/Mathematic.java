@@ -34,9 +34,15 @@ public class Mathematic {
         return res;
     }
 
-    public double resultOfIncrease(){
+    public double resultOfIncrease() {
         double res = (sc.nextDouble() * sc.nextInt());
         return res;
+    }
+
+    public int subtractResult() {
+        int res = sc.nextInt() - sc.nextInt();
+        return res;
+
     }
 
 }

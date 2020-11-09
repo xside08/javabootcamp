@@ -6,7 +6,7 @@ public class Car {
     static boolean ignition = false;
     static Scanner speed = new Scanner(System.in);
 
-    static void startEngine () {
+    static void startEngine() {
 
         if (ignition == true) {
             System.out.println("Your car is already working");
@@ -16,12 +16,12 @@ public class Car {
         }
     }
 
-    static void stopEngine () {
+    static void stopEngine() {
 
         if (ignition == true) {
             System.out.println("please, stop a car");
             ignition = false;
-        }else {
+        } else {
             System.out.println("your engine isn't working");
         }
     }
