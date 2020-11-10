@@ -8,8 +8,7 @@ import java.util.TreeSet;
 public class ListCreator {
 
     public List<Integer> createArr() {
-        List<Integer> arrayList = new ArrayList<>(Arrays.asList(3, 9, 11, 18, 20, 22));
-        return arrayList;
+        return new ArrayList<>(Arrays.asList(3, 9, 11, 18, 20, 22));
     }
 
     public void removeNumbersDivisionableByNum(List<Integer> arr, int number) {
@@ -20,7 +19,7 @@ public class ListCreator {
         }
     }
 
-    public void removeDublicateFruits(List<String> arr) {
+    public void removeDuplicateFruits(List<String> arr) {
         boolean modified = false;
         for (int i = 0; i < arr.size(); i++) {
             if (arr.get(i).equalsIgnoreCase("orange")) {
@@ -54,7 +53,7 @@ public class ListCreator {
         return fruits;
     }
 
-    public List<String> getVegetables(){
+    public List<String> getVegetables() {
         List<String> vegetables = new ArrayList<>();
         vegetables.add("Potato");
         vegetables.add("Tomato");
@@ -67,14 +66,7 @@ public class ListCreator {
         return vegetables;
     }
 
-    public int compare(String str1, String str2)
-    {
-        String first_Str = str1;
-        String second_Str = str2;
-        return second_Str.compareTo(first_Str);
-    }
-
-    public TreeSet<String> getTreeSetArr(){
+    public TreeSet<String> getTreeSetArr() {
         TreeSet<String> creatingATreeSet = new TreeSet<>();
         creatingATreeSet.add("1");
         creatingATreeSet.add("2");
