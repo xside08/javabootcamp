@@ -12,9 +12,6 @@ import main.java.com.andrii.shape.space.impl.SquarePyramid;
 public class Application {
     public static void main(String[] args) {
 
-//        System.out.println("Enter a number of radius: ");
-//        Scanner sc = new Scanner(System.in);
-//        double radius = sc.nextDouble();
         Vertex2D v = new Vertex2D(9, 7);
         System.out.println("***Circle***");
         Circle first = new Circle(8, v);
