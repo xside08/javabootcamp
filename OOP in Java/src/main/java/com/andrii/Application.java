@@ -32,6 +32,7 @@ public class Application {
         System.out.println("***Triangle***");
         Triangle tri = new Triangle(triangleF, triangleS, triangleT);
         System.out.println("Perimetr of triangle is " + tri.getPerimeter());
+        System.out.println("Area of triangle is " + tri.getArea());
 
         System.out.println("***Cuboid***");
         Vertex3D vertexCuboid = new Vertex3D(2, 4, 6);

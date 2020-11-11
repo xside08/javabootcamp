@@ -24,7 +24,10 @@ public class Triangle extends PlaneShape {
 
     @Override
     public double getArea() {
-
-        return 0;
+        double a = getDistanceBetweenVertices(vertex2D, vertex2DSecond);
+        double b = getDistanceBetweenVertices(vertex2DSecond, vertex2DThird);
+        double c = getDistanceBetweenVertices(vertex2D, vertex2DThird);
+        double halfOfPerimeter = (a + b + c) / 2;
+        return Math.sqrt(halfOfPerimeter * (halfOfPerimeter - a) * (halfOfPerimeter - b) * (halfOfPerimeter - c));
     }
 }
