@@ -4,16 +4,16 @@ import java.util.Arrays;
 
 public class OneDimensionalArray {
 
-    public int[] initializeOneDimensionalArray() {
-        int[] first = new int[20];
+    public int[] initializeOneDimensionalArray(int num) {
+        int[] first = new int[num];
         for (int i = 0; i < first.length; i++) {
             first[i] = (int) (Math.random() * 70 + 1);
         }
         return first;
     }
 
-    public void sortArr(int[] arrra) {
-        Arrays.sort(arrra);
+    public void sortArr(int[] array) {
+        Arrays.sort(array);
     }
 
     public int showMinNumber(int[] arr) {

@@ -24,8 +24,7 @@ public class MatrixOperations {
         String[] third = {"Darkness", "Smile", "радий", "Like"};
         String[] fourth = {"time", "of", "Sadness", "бачити"};
 
-        String[][] newMass = {first, second, third, fourth};
-        return newMass;
+        return new String[][]{first, second, third, fourth};
     }
 
     public int getMatrixSize(String[][] matrix) {
