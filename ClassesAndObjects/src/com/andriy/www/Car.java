@@ -1,38 +1,52 @@
 package com.andriy.www;
 
-import java.util.Scanner;
-
 public class Car {
-    static boolean ignition = false;
-    static Scanner speed = new Scanner(System.in);
+    private boolean ignition;
+    private int speed;
 
-    static void startEngine() {
-
-        if (ignition == true) {
+    public void startEngine() {
+        if (ignition) {
             System.out.println("Your car is already working");
         } else {
             ignition = true;
-            System.out.println("let's go!");
+            System.out.println("We can drive because your ignition is on now!");
         }
     }
 
-    static void stopEngine() {
-
-        if (ignition == true) {
-            System.out.println("please, stop a car");
+    public void stopEngine() {
+        if (ignition) {
+            System.out.println("If you're going to stop a car. Please, reduce speed and turn off ignition");
             ignition = false;
         } else {
             System.out.println("your engine isn't working");
         }
     }
 
-    static void riding() {
-        System.out.println("we are driving to somewhere");
+    public void riding(int speed) {
+        if (speed >= 90 && speed < 350) {
+            System.out.println("be aware - speed is to hight");
+        } else if (speed >= 60 && speed < 90) {
+            System.out.println("U driving safetly!");
+        } else if (speed > 0 && speed < 60) {
+            System.out.println("U're too slow. Anything wrong?");
+        } else {
+            System.out.println("Choose correct speed, please!");
+        }
     }
 
-    static void setSpeed() {
-        System.out.println("ener desired speed here");
-        int speedSet = speed.nextInt();
-        System.out.println("your speed is " + speedSet + " km/h");
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public boolean isIgnition() {
+        return ignition;
+    }
+
+    public void setIgnition(boolean ignition) {
+        this.ignition = ignition;
+    }
+
+    public int getSpeed() {
+        return speed;
     }
 }

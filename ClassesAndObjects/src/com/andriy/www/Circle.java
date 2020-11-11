@@ -1,16 +1,19 @@
 package com.andriy.www;
 
-import java.util.Scanner;
-
 public class Circle {
 
-    static Scanner x = new Scanner(System.in);
+    private int rad;
 
-    static void countASquare() {
-        System.out.println("Enter a radius of circle");
-        double radius = x.nextDouble();
-        System.out.println("you have entered " + radius);
-        double sqr = (Math.pow(radius, 2) * Math.PI);
-        System.out.println("square of circle with " + radius + " radius are " + sqr);
+    public Circle(int rad) {
+        this.rad = rad;
+    }
+
+    int countASquare() {
+        double sqr = (Math.pow(rad, 2) * Math.PI);
+        return (int) sqr;
+    }
+
+    public int getRad() {
+        return rad;
     }
 }
