@@ -14,15 +14,12 @@ public class Sphere extends SpaceShape {
     @Override
     public double getArea() {
         double areaOfSphere = (4 * Math.PI * Math.pow(rad, 2));
-        System.out.println(areaOfSphere);
         return areaOfSphere;
     }
 
     @Override
     public double getVolume() {
         double volumeOfSphere = ((4.0 / 3.0) * Math.PI * Math.pow(rad, 3));
-        System.out.println(volumeOfSphere);
-        return 0;
+        return volumeOfSphere;
     }
-
 }

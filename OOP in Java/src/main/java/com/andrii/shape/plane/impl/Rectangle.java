@@ -17,14 +17,12 @@ public class Rectangle extends PlaneShape {
     @Override
     public double getPerimeter() {
         double perimeterOfRectangle = 2 * (width + height);
-        System.out.println("Perimeter is " + perimeterOfRectangle);
         return perimeterOfRectangle;
     }
 
     @Override
     public double getArea() {
         double areaOfRectangle = width * height;
-        System.out.println("Area is " + areaOfRectangle);
         return areaOfRectangle;
     }
 

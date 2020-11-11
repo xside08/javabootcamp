@@ -16,14 +16,12 @@ public class SquarePyramid extends SpaceShape {
     @Override
     public double getVolume() {
         double volumeOfSquarePiramid = ((1.0 / 3.0) * Math.pow(width, 2) * height);
-        System.out.println(volumeOfSquarePiramid);
         return volumeOfSquarePiramid;
     }
 
     @Override
     public double getArea() {
         double areaOfSquarePiramid = ((width * width) + 2 * width * height);
-        System.out.println(areaOfSquarePiramid);
         return areaOfSquarePiramid;
     }
 }

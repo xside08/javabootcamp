@@ -9,7 +9,6 @@ public class Cuboid extends SpaceShape {
     int height;
     int depth;
 
-
     public Cuboid(Vertex3D vertex3D, int depth, int width, int height) {
         super(vertex3D);
         this.depth = depth;
@@ -20,14 +19,12 @@ public class Cuboid extends SpaceShape {
     @Override
     public double getArea() {
         double areaOfCuboid = (2 * (width * height) + 2 * (height * depth) + 2 * (depth * width));
-        System.out.println(areaOfCuboid);
         return areaOfCuboid;
     }
 
     @Override
     public double getVolume() {
         double volumeOfCuboid = (width * height * depth);
-        System.out.println(volumeOfCuboid);
         return volumeOfCuboid;
     }
 }
