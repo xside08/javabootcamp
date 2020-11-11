@@ -57,7 +57,7 @@ public class ListCreator {
         List<String> vegetables = new ArrayList<>();
         vegetables.add("Potato");
         vegetables.add("Tomato");
-        vegetables.add("Pamelo");
+        vegetables.add("Pomelo");
         vegetables.add("Mango");
         vegetables.add("Carrot");
         vegetables.add("Dill");
