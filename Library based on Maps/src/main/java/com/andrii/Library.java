@@ -22,7 +22,7 @@ public class Library {
 
     public void showBooksAccounting() {
         Set<Date> dates = booksOblik.keySet();
-        for (Date date: dates) {
+        for (Date date : dates) {
             Book book = booksOblik.get(date);
             System.out.println(date.toString() + " | " + book.toString());
         }
@@ -41,15 +41,13 @@ public class Library {
     }
 
 
-
     public void deleteBookFromBookList(Book bookForDeleting) {
         Iterator<Book> iterator = booksList.iterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             Book book = iterator.next();
-            if(bookForDeleting.equals(book)){
+            if (bookForDeleting.equals(book)) {
                 iterator.remove();
             }
         }
-
     }
 }
