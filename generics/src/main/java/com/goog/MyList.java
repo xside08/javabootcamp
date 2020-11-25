@@ -6,8 +6,8 @@ public class MyList<T extends Number>  {
 
     List<T> firstList = new ArrayList<>();
 
-    public void add(T n){
-        firstList.add(n);
+    public void add(T number){
+        firstList.add(number);
     }
 
     public  T largerOfList(){
