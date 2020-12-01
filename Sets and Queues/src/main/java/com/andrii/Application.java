@@ -6,16 +6,16 @@ public class Application {
     public static void main(String[] args) {
         TreeSet<Integer> treeSet = new TreeSet<>(new Comparator<Integer>() {
             @Override
-            public int compare(Integer o1, Integer o2) {
-                if (o1 % 2 == 0) {
-                    if (o2 % 2 == 0) {
-                        return o1 - o2;
+            public int compare(Integer numberOne, Integer numberTwo) {
+                if (numberOne % 2 == 0) {
+                    if (numberTwo % 2 == 0) {
+                        return numberOne - numberTwo;
                     }
                     return -1;
-                } else if (o2 % 2 == 0) {
+                } else if (numberTwo % 2 == 0) {
                     return 1;
                 } else {
-                    return o1 - o2;
+                    return numberOne - numberTwo;
                 }
             }
         });
