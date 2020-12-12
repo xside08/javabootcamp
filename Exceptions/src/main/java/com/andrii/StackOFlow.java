@@ -4,6 +4,6 @@ public class StackOFlow {
 
 
     public int foo(int i) {
-        return foo(i+1);
+        return foo(i + 1);
     }
 }
