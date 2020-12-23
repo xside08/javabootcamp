@@ -7,17 +7,16 @@ public class Book {
     String title;
     String writer;
 
-    public Book(int yearOfPublishing, String title, String wrirter) {
+    public Book(int yearOfPublishing, String title, String writer) {
         this.yearOfPublishing = yearOfPublishing;
         this.title = title;
-        this.writer = wrirter;
+        this.writer = writer;
     }
 
     @Override
     public String toString() {
-        return " \""+ title + "\", " + yearOfPublishing +
-                ", " + writer ;
-
+        return " \"" + title + "\", " + yearOfPublishing +
+                ", " + writer;
     }
 
     @Override
